@@ -4,6 +4,7 @@ import Header from "./section-header/Header";
 import About from "./section-about/About";
 import Overview from "./section-overview/Overview";
 import Where from "./section-where/Where";
+import What from "./section-what/What";
 
 const Main: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Main: React.FC = () => {
       <About />
       <Overview />
       <Where />
+      <What />
     </AppContainer>
   );
 };

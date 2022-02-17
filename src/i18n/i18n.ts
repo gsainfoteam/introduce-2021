@@ -11,6 +11,11 @@ if (browserLanguage !== "ko-KR") {
 }
 
 storedLanguage = localStorage.getItem("language") || "";
+
+if (Object.keys(resources).findIndex((language) => language === storedLanguage) < 0) {
+  storedLanguage = '';
+}
+
 const currentLanguage = storedLanguage || browserLanguage || "en";
 
 i18n.use(initReactI18next).init({

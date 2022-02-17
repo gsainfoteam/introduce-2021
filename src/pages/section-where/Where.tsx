@@ -11,7 +11,7 @@ const Root = styled.div`
   align-items: center;
   width: 100%;
   height: 400px;
-  margin: 150px 0;
+  margin-top: 150px;
   background: linear-gradient(
     95.45deg,
     rgba(250, 215, 144, 0.24) 5.63%,

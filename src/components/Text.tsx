@@ -9,6 +9,7 @@ interface TextProps {
   align?: "left" | "right" | "center";
   weight?: string;
   marginTop?: string;
+  marginLeft?: string;
   marginRight?: string;
   marginBottom?: string;
 }
@@ -19,6 +20,7 @@ const Root = styled.div<{
   align?: string;
   weight?: string;
   marginTop?: string;
+  marginLeft?: string;
   marginRight?: string;
   marginBottom?: string;
 }>`
@@ -29,6 +31,7 @@ const Root = styled.div<{
   font-weight: ${(props) => props.weight || "400"};
   ${(props) => (props.marginTop ? `margin-top: ${props.marginTop};` : "")}
   ${(props) => (props.marginRight ? `margin-right: ${props.marginRight};` : "")}
+  ${(props) => (props.marginLeft ? `margin-left: ${props.marginLeft};` : "")}
   ${(props) =>
     props.marginBottom ? `margin-bottom: ${props.marginBottom};` : ""}
   ${transition}
@@ -41,6 +44,7 @@ const Text: React.FC<TextProps> = ({
   align,
   weight,
   marginTop,
+  marginLeft,
   marginRight,
   marginBottom,
 }) => {
@@ -51,6 +55,7 @@ const Text: React.FC<TextProps> = ({
       align={align}
       weight={weight}
       marginTop={marginTop}
+      marginLeft={marginLeft}
       marginRight={marginRight}
       marginBottom={marginBottom}
     >

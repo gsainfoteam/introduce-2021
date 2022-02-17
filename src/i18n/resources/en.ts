@@ -22,7 +22,7 @@ export const en = {
       description: "We manage Web services and \n other information of GIST",
     },
     {
-      title: "How We Work Together",
+      title: "How We Work",
       description: "Using trending Tools like \n Git, Slack, Figma",
     },
     {
@@ -35,5 +35,30 @@ export const en = {
     description:
       "The Information Service belongs to the \n Emergency Response Committee and develops and operates \n computer programs for the convenience of students.",
     button: "LEARN MORE",
+  },
+  what: {
+    title: "What We Do",
+    content: [
+      {
+        title: "1. NAS(Network Attached Storage) Management",
+        description:
+          "Nas is a term used to refer to storage devices that connect to a network and provide file access services to computer systems. It is operated by GSA-Infoteam for the purpose of final backup and preserving local governments.",
+      },
+      {
+        title: "2. Manager of GIST college student Facebook",
+        description:
+          "We also deal with information not just work as developers all the time, such as managing Facebook community. It is a group with graduates and enrolled students, and we manages posts such as various information-sharing articles and used goods sales articles.",
+      },
+      {
+        title: "3. Develop and Deploy AMS(Application Management Service)",
+        description:
+          "Clubs in other schools usually go through the selection process by contacting applicants one by one using text messages and phone calls. AMS is a service that allows Student Councils and Clubs to easily proceed with the selection process.",
+      },
+      {
+        title: "4. Develop and Deploy GISTORY",
+        description:
+          "GISTORY is a bulletin board for GIST college students developed by the GSA-Infoeam which is also charge of maintenance and operation. In GISTORY, you can check announcements from Student Councils and various posts",
+      },
+    ],
   },
 };
