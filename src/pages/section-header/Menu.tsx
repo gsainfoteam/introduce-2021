@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import useIsMobile from "../../hooks/useIsMobile";
 import DropDown from "../../components/DropDown";
-import Button from "../../components/Button";
+import LanguageBtn from "../../components/LanguageBtn";
 import Image from "../../components/Image";
 import image from "../../assets/language.svg";
 import styled from "styled-components";
@@ -59,20 +59,20 @@ const Menu: React.FC = () => {
       <DropDown
         value={openLanguage}
         anchor={
-          <Button
+          <LanguageBtn
             icon
             disabled={openLanguage}
             onClick={() => setOpenLanguage(true)}
           >
             <Image width="20px" marginTop="3px" src={image} />
-          </Button>
+          </LanguageBtn>
         }
         onContentClick={() => setOpenLanguage(false)}
         onClickOutside={() => setOpenLanguage(false)}
       >
         <LanguageWrapper>
-          <Button onClick={() => changeLanguage("en")}>EN</Button>
-          <Button onClick={() => changeLanguage("ko")}>KR</Button>
+          <LanguageBtn onClick={() => changeLanguage("en")}>EN</LanguageBtn>
+          <LanguageBtn onClick={() => changeLanguage("ko")}>KR</LanguageBtn>
         </LanguageWrapper>
       </DropDown>
     </Root>

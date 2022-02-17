@@ -9,7 +9,7 @@ const Root = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 80px;
+  height: 70px;
   background-color: white;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
 `;

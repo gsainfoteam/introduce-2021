@@ -6,7 +6,7 @@ interface TextProps {
   children: string | React.ReactNode;
   size?: string;
   color?: string;
-  align?: "left" | "right";
+  align?: "left" | "right" | "center";
   weight?: string;
   marginTop?: string;
   marginRight?: string;
@@ -22,7 +22,7 @@ const Root = styled.div<{
   marginRight?: string;
   marginBottom?: string;
 }>`
-  text-align: ${(props) => (props.align === "right" ? "right" : "left")};
+  ${(props) => (props.align ? `text-align: ${props.align};` : "")}
   ${(props) => (props.size ? `font-size: ${props.size};` : "")}
   font-family: "Roboto", sans-serif;
   color: ${(props) => props.color || "black"};

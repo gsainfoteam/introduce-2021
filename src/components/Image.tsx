@@ -15,7 +15,7 @@ const Image = styled.img<{
   marginRight?: string;
 }>`
   overflow: hidden;
-  width: ${(props) => props.width};
+  min-width: ${(props) => props.width};
   height: auto;
   ${transition}
   ${(props) => (props.marginTop ? `margin-top: ${props.marginTop};` : "")}
