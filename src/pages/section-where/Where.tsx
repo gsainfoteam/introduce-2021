@@ -25,7 +25,7 @@ const Where: React.FC = () => {
   const isMobile = useIsMobile();
 
   return (
-    <Root>
+    <Root id="where-scroll-view">
       <Text size={isMobile ? "30px" : "45px"} weight="900" marginTop="50px">
         {t("where.title")}
       </Text>

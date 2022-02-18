@@ -29,17 +29,31 @@ const LanguageWrapper = styled.span`
   align-items: center;
 `;
 
-const MenuItem: React.FC = ({ children }) => {
+interface MenuItemProps {
+  children?: React.ReactNode;
+  onClick?: () => void;
+}
+
+const MenuItem: React.FC<MenuItemProps> = ({ children, onClick }) => {
   return (
-    <Text size="16px" weight="800">
-      {children}
-    </Text>
+    <div onClick={onClick} style={{ cursor: "pointer" }}>
+      <Text size="16px" weight="800">
+        {children}
+      </Text>
+    </div>
   );
 };
 
 const Menu: React.FC = () => {
   const [t, i18n] = useTranslation("lang", { useSuspense: false });
   const [openLanguage, setOpenLanguage] = useState(false);
+
+  const onScroll = (id: string) => {
+    const mainScrollView = document.getElementById(id);
+    if (mainScrollView) {
+      mainScrollView.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang).then();
@@ -50,10 +64,18 @@ const Menu: React.FC = () => {
     <Root>
       {!useIsMobile() && (
         <React.Fragment>
-          <MenuItem>{t("header.where")}</MenuItem>
-          <MenuItem>{t("header.what")}</MenuItem>
-          <MenuItem>{t("header.how")}</MenuItem>
-          <MenuItem>{t("header.join")}</MenuItem>
+          <MenuItem onClick={() => onScroll("where-scroll-view")}>
+            {t("header.where")}
+          </MenuItem>
+          <MenuItem onClick={() => onScroll("what-scroll-view")}>
+            {t("header.what")}
+          </MenuItem>
+          <MenuItem onClick={() => onScroll("how-scroll-view")}>
+            {t("header.how")}
+          </MenuItem>
+          <MenuItem onClick={() => onScroll("join-scroll-view")}>
+            {t("header.join")}
+          </MenuItem>
         </React.Fragment>
       )}
       <DropDown

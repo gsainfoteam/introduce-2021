@@ -81,7 +81,8 @@ export const en = {
       },
       {
         title: "Can I Apply with other different Student Councils?",
-        description: "",
+        description:
+          "This is Important! Unlike other Student Councils, GSA-INFOTEAM cannot be simultaneously applied with other student councils.",
       },
     ],
   },

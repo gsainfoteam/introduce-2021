@@ -73,6 +73,7 @@ const BodyWrapper = styled.div<{ height?: number }>`
 const Body = styled.div`
   margin-top: -22px;
   padding: 22px;
+  line-height: 27px;
   @media (${MEDIA_QUERY_WIDTH_MOBILE_WIDTH}) {
     margin-top: -12px;
   }

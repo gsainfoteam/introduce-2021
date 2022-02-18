@@ -44,7 +44,7 @@ const How: React.FC = () => {
   const isMobile = useIsMobile();
 
   return (
-    <Root>
+    <Root id="how-scroll-view">
       <Text size={isMobile ? "40px" : "50px"} weight="900" marginTop="100px">
         {t("how.title")}
       </Text>

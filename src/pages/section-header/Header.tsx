@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
+  width: 94%;
   max-width: 1440px;
 `;
 

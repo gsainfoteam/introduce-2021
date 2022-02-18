@@ -13,7 +13,7 @@ import { MEDIA_QUERY_WIDTH_MOBILE_WIDTH } from "config/mediaQuery";
 const Root = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  padding-top: 100px;
   margin-bottom: 100px;
   max-width: 1440px;
   width: 100%;
@@ -29,7 +29,7 @@ const What: React.FC = () => {
   const isMobile = useIsMobile();
 
   return (
-    <Root>
+    <Root id="what-scroll-view">
       <Text
         size={isMobile ? "30px" : "45px"}
         weight="900"

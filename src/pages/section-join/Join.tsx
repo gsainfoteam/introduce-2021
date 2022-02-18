@@ -9,9 +9,9 @@ const Root = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 110px;
 
-  padding-bottom: 100px;
+  padding-bottom: 170px;
 `;
 
 const Join: React.FC = () => {
@@ -34,12 +34,12 @@ const Join: React.FC = () => {
   ];
 
   return (
-    <Root>
+    <Root id="join-scroll-view">
       <Text
         size={isMobile ? "30px" : "45px"}
         weight="900"
         marginLeft={isMobile ? "8%" : "0"}
-        marginBottom="50px"
+        marginBottom="70px"
       >
         {t("join.title")}
       </Text>

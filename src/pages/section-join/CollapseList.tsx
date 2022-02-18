@@ -17,6 +17,7 @@ const Root = styled.div`
   margin-top: -36px;
   @media (${MEDIA_QUERY_WIDTH_MOBILE_WIDTH}) {
     margin-top: -12px;
+    width: 80%;
   }
 `;
 
