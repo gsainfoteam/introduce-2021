@@ -12,6 +12,7 @@ interface CardProps {
   backgroundColor: string;
   color?: string;
   src: string;
+  id?: string;
 }
 
 const Root = styled.div<{ backgroundColor: string }>`
@@ -24,6 +25,10 @@ const Root = styled.div<{ backgroundColor: string }>`
   background-color: ${(props) => props.backgroundColor};
   ${transition}
 
+  &:hover {
+    cursor: pointer;
+  }
+
   @media (${MEDIA_QUERY_WIDTH_MOBILE_WIDTH}) {
     margin: 10px;
     min-width: 200px;
@@ -31,12 +36,28 @@ const Root = styled.div<{ backgroundColor: string }>`
   }
 `;
 
-const Card: React.FC<CardProps> = ({ index, backgroundColor, color, src }) => {
+const Card: React.FC<CardProps> = ({
+  index,
+  backgroundColor,
+  color,
+  src,
+  id,
+}) => {
   const { t } = useTranslation();
   const isMobile = useIsMobile();
 
+  const onScroll = (id: string) => {
+    const mainScrollView = document.getElementById(id);
+    if (mainScrollView) {
+      mainScrollView.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <Root backgroundColor={backgroundColor}>
+    <Root
+      backgroundColor={backgroundColor}
+      onClick={() => onScroll(`${id}-scroll-view`)}
+    >
       <Text
         color={color}
         size={isMobile ? "16px" : "20px"}

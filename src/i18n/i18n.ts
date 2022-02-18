@@ -12,8 +12,11 @@ if (browserLanguage !== "ko-KR") {
 
 storedLanguage = localStorage.getItem("language") || "";
 
-if (Object.keys(resources).findIndex((language) => language === storedLanguage) < 0) {
-  storedLanguage = '';
+if (
+  Object.keys(resources).findIndex((language) => language === storedLanguage) <
+  0
+) {
+  storedLanguage = "";
 }
 
 const currentLanguage = storedLanguage || browserLanguage || "en";

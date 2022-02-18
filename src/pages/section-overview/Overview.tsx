@@ -24,10 +24,28 @@ const Root = styled.div`
 const Overview: React.FC = () => {
   return (
     <Root>
-      <Card index={0} backgroundColor="#fad790" src={photo1} />
-      <Card index={1} backgroundColor="#f39274" color="white" src={photo2} />
-      <Card index={2} backgroundColor="#5cacfc" color="white" src={photo3} />
-      <Card index={3} backgroundColor="#fcb46d" color="white" src={photo4} />
+      <Card index={0} backgroundColor="#fad790" src={photo1} id="where" />
+      <Card
+        index={1}
+        backgroundColor="#f39274"
+        color="white"
+        src={photo2}
+        id="what"
+      />
+      <Card
+        index={2}
+        backgroundColor="#5cacfc"
+        color="white"
+        src={photo3}
+        id="how"
+      />
+      <Card
+        index={3}
+        backgroundColor="#fcb46d"
+        color="white"
+        src={photo4}
+        id="join"
+      />
     </Root>
   );
 };

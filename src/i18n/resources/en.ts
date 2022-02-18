@@ -42,7 +42,7 @@ export const en = {
       {
         title: "1. NAS(Network Attached Storage) Management",
         description:
-          "NAS is a term used to refer to storage devices that connect to a network and provide file access services to computer systems. It is operated by GSA-Infoteam for the purpose of final backup and preserving local governments.",
+          "NAS is a term used to refer to storage devices that connect to a network and provide file access services to computer systems. It is operated by GSA-Infoteam for the purpose of final backup and preserving important documents.",
       },
       {
         title: "2. Manager of GIST college student Facebook",

@@ -12,7 +12,7 @@ const Root = styled.div`
   min-width: 400px;
 
   @media (${MEDIA_QUERY_WIDTH_MOBILE_WIDTH}) {
-    margin-left: 25px;
+    margin-left: 10%;
   }
 `;
 
