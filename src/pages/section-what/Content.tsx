@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import Text from "components/Text";
-import Image from "../../components/Image";
+import Image from "components/Image";
 import transition from "config/transition";
 import { MEDIA_QUERY_WIDTH_MOBILE_WIDTH } from "config/mediaQuery";
-import useIsMobile from "../../hooks/useIsMobile";
+import useIsMobile from "hooks/useIsMobile";
 
 interface ContentProps {
   index: number;
@@ -27,14 +27,16 @@ const Root = styled.div`
 const ContentWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
-  margin-top: 30px;
+  margin-top: 35px;
   width: 90%;
+  max-width: 1200px;
+  align-items: center;
   ${transition}
 
   @media (${MEDIA_QUERY_WIDTH_MOBILE_WIDTH}) {
     text-align: center;
     flex-direction: column;
+    align-items: center;
   }
 `;
 

@@ -42,7 +42,7 @@ export const en = {
       {
         title: "1. NAS(Network Attached Storage) Management",
         description:
-          "Nas is a term used to refer to storage devices that connect to a network and provide file access services to computer systems. It is operated by GSA-Infoteam for the purpose of final backup and preserving local governments.",
+          "NAS is a term used to refer to storage devices that connect to a network and provide file access services to computer systems. It is operated by GSA-Infoteam for the purpose of final backup and preserving local governments.",
       },
       {
         title: "2. Manager of GIST college student Facebook",
@@ -57,7 +57,31 @@ export const en = {
       {
         title: "4. Develop and Deploy GISTORY",
         description:
-          "GISTORY is a bulletin board for GIST college students developed by the GSA-Infoeam which is also charge of maintenance and operation. In GISTORY, you can check announcements from Student Councils and various posts",
+          "GISTORY is a general community for GIST college students developed by the GSA-Infoeam which is also charge of maintenance and operation. In GISTORY, you can check announcements from Student Councils and various posts",
+      },
+    ],
+  },
+  how: {
+    title: "How We Work",
+    team: "as Team",
+    developer: "as Developer",
+  },
+  join: {
+    title: "How to Join Us",
+    content: [
+      {
+        title: "How Do I Apply to GSA-INFOTEAM?",
+        description:
+          'Click "REGISTER NOW" button on the Top of this Page. The Button will redirect you to the page where application form of GSA-INFOTEAM exist. Please type your answers on the redirected page and submit. If the submission is completed correctly, you will be contacted individually.',
+      },
+      {
+        title: "What's the application period and interview period each?",
+        description:
+          "The application period will be from 2/22(Tue) to 2/25(Fri), and the individual interview schedule will be guided accordingly. And, interviews are conducted from 3/1(Tue) to 3/9(Wed) according to individual schedules. After that, the final results will be announced.",
+      },
+      {
+        title: "Can I Apply with other different Student Councils?",
+        description: "",
       },
     ],
   },

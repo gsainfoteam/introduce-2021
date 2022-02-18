@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import Text from "components/Text";
 import useIsMobile from "../../hooks/useIsMobile";
-import Content from "../section-where/Content";
+import Content from "./Content";
 import photo1 from "assets/nas.svg";
 import photo2 from "assets/facebook.svg";
 import photo3 from "assets/ams.svg";
@@ -14,6 +14,7 @@ const Root = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+  margin-bottom: 100px;
   max-width: 1440px;
   width: 100%;
   padding-left: 10%;
