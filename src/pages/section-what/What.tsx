@@ -8,7 +8,6 @@ import photo1 from "assets/nas.svg";
 import photo2 from "assets/facebook.svg";
 import photo3 from "assets/ams.svg";
 import photo4 from "assets/gistory.svg";
-import { MEDIA_QUERY_WIDTH_MOBILE_WIDTH } from "config/mediaQuery";
 
 const Root = styled.div`
   display: flex;
@@ -16,12 +15,7 @@ const Root = styled.div`
   padding-top: 100px;
   margin-bottom: 100px;
   max-width: 1440px;
-  width: 100%;
-  padding-left: 10%;
-
-  @media (${MEDIA_QUERY_WIDTH_MOBILE_WIDTH}) {
-    padding: 0;
-  }
+  width: 90%;
 `;
 
 const What: React.FC = () => {
@@ -30,12 +24,7 @@ const What: React.FC = () => {
 
   return (
     <Root id="what-scroll-view">
-      <Text
-        size={isMobile ? "30px" : "45px"}
-        weight="900"
-        marginLeft={isMobile ? "8%" : "0"}
-        marginBottom="30px"
-      >
+      <Text size={isMobile ? "30px" : "45px"} weight="900" marginBottom="30px">
         {t("what.title")}
       </Text>
       <Content index={0} src={photo1} imgSize="180px" />
