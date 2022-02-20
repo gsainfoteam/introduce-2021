@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/introduce-2022/static/css/main.ca83b589.css",
-    "main.js": "/introduce-2022/static/js/main.b0ccd562.js",
-    "static/js/787.98991ea5.chunk.js": "/introduce-2022/static/js/787.98991ea5.chunk.js",
+    "main.js": "/introduce-2022/static/js/main.f06c8f66.js",
+    "static/js/787.07f876d1.chunk.js": "/introduce-2022/static/js/787.07f876d1.chunk.js",
     "static/media/main.svg": "/introduce-2022/static/media/main.7a599c4fdff605c2161f704e2349840e.svg",
     "static/media/facebook.svg": "/introduce-2022/static/media/facebook.e64d8ed48e34a9096e1b19c8b338eb85.svg",
     "static/media/gistory.svg": "/introduce-2022/static/media/gistory.69f0a10c6843a2c61c3e70ef260e225f.svg",
@@ -19,11 +19,11 @@
     "static/media/slack.svg": "/introduce-2022/static/media/slack.f67c824cd278b2a780facbe3de0f3ad4.svg",
     "index.html": "/introduce-2022/index.html",
     "main.ca83b589.css.map": "/introduce-2022/static/css/main.ca83b589.css.map",
-    "main.b0ccd562.js.map": "/introduce-2022/static/js/main.b0ccd562.js.map",
-    "787.98991ea5.chunk.js.map": "/introduce-2022/static/js/787.98991ea5.chunk.js.map"
+    "main.f06c8f66.js.map": "/introduce-2022/static/js/main.f06c8f66.js.map",
+    "787.07f876d1.chunk.js.map": "/introduce-2022/static/js/787.07f876d1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca83b589.css",
-    "static/js/main.b0ccd562.js"
+    "static/js/main.f06c8f66.js"
   ]
 }
