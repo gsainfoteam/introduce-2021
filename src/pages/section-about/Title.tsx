@@ -32,7 +32,17 @@ const Title: React.FC = () => {
             <div key={lineIndex}>{line}</div>
           ))}
       </Text>
-      <Button marginTop="35px">{t("about.button")}</Button>
+      <Button
+        marginTop="35px"
+        onClick={() =>
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+          })
+        }
+      >
+        {t("about.button")}
+      </Button>
     </Root>
   );
 };

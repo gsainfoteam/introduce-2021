@@ -22,7 +22,7 @@ if (
 const currentLanguage = storedLanguage || browserLanguage || "en";
 
 i18n.use(initReactI18next).init({
-  fallbackLng: currentLanguage,
+  fallbackLng: "ko",
   debug: false,
   resources: {
     ko: {

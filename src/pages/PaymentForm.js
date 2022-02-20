@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Button, Grid, Typography, TextField } from "@mui/material";
+import Text from "../components/Text";
 
 const validator = {
   name: /^[가-힣]{2,4}$/,
@@ -18,12 +19,20 @@ const PaymentForm = (props) => {
   const sendMessage = () => {
     const endpoint = "https://application.gistory.me";
     const info = {
-      project: "aa7dfe414e1149f7a65dbe90df730b53",
+      project_id: "gsainfoteam_2022",
       name: name,
       student_id: studentId,
       phone_number: phoneNumber,
-      "개발에 참여하신 경험이 있으시면 적어주세요": previousDevCareer,
-      "하고싶은 말있으시면 적어주세요": message,
+      misc: [
+        {
+          question: "개발에 참여하신 경험이 있으시면 적어주세요",
+          answer: previousDevCareer,
+        },
+        {
+          question: "하시고 싶으신 말이 있다면 적어주세요",
+          answer: message,
+        },
+      ],
     };
 
     if (window.confirm("이 양식 그대로 제출하시겠습니까?"))
@@ -82,11 +91,18 @@ const PaymentForm = (props) => {
         maxWidth: "1000px",
       }}
     >
-      <Typography fontSize="30px" weight="900" gutterBottom>
+      <div
+        style={{
+          width: "100%",
+          height: "1px",
+          backgroundColor: "gray",
+        }}
+      />
+      <Text size="45px" weight="900" marginTop="75px">
         인포팀에 바로 지원하기
-      </Typography>
-      <Typography variant="subtitle2" gutterBottom color="error">
-        새로고침 할 경우에, 작성중인 내용은 사라집니다
+      </Text>
+      <Typography variant="subtitle2" gutterBottom color="error" sx={{ mt: 2 }}>
+        새로고침하면, 작성중인 내용이 사라집니다
       </Typography>
       <Grid container spacing={3} sx={{ mt: 4 }}>
         <Grid item xs={12} md={5}>
@@ -149,7 +165,7 @@ const PaymentForm = (props) => {
           <TextField
             multiline
             id="message"
-            label="추가적으로 하고싶은 말이 있으시다면 적어주세요"
+            label="하시고 싶으신 말이 있다면 적어주세요"
             value={message}
             name="message"
             onChange={(e) => {
@@ -170,13 +186,13 @@ const PaymentForm = (props) => {
             variant="contained"
             color="primary"
             onClick={sendMessage}
-            sx={{ mt: 5, mb: 3, alignSelf: "flex-start" }}
+            sx={{ mt: 5, mb: 8, alignSelf: "flex-start" }}
           >
             제출하기
           </Button>
         ) : (
           <>
-            <Button variant="contained" disabled sx={{ mt: 5, mb: 3 }}>
+            <Button variant="contained" disabled sx={{ mt: 5, mb: 8 }}>
               제출하기
             </Button>
           </>

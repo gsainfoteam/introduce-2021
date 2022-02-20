@@ -6,6 +6,7 @@ import Text from "./Text";
 interface ButtonProps {
   children?: React.ReactNode;
   marginTop?: string;
+  onClick?: () => void;
 }
 
 const Root = styled.button<{ marginTop?: string }>`
@@ -28,13 +29,15 @@ const Root = styled.button<{ marginTop?: string }>`
   }
 `;
 
-const Button: React.FC<ButtonProps> = ({ children, marginTop }) => {
+const Button: React.FC<ButtonProps> = ({ children, marginTop, onClick }) => {
   return (
-    <Root marginTop={marginTop}>
-      <Text color="white" size="18px" weight="700">
-        {children}
-      </Text>
-    </Root>
+    <div onClick={onClick}>
+      <Root marginTop={marginTop}>
+        <Text color="white" size="18px" weight="700">
+          {children}
+        </Text>
+      </Root>
+    </div>
   );
 };
 

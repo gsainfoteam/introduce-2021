@@ -15,7 +15,8 @@ const Root = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 35%;
+  width: 30%;
+  margin-right: 5%;
   ${transition}
 
   @media (${MEDIA_QUERY_WIDTH_MOBILE_WIDTH}) {
@@ -78,7 +79,7 @@ const Menu: React.FC = () => {
           </MenuItem>
         </React.Fragment>
       )}
-      <DropDown
+      {/*<DropDown
         value={openLanguage}
         anchor={
           <LanguageBtn
@@ -96,7 +97,7 @@ const Menu: React.FC = () => {
           <LanguageBtn onClick={() => changeLanguage("en")}>EN</LanguageBtn>
           <LanguageBtn onClick={() => changeLanguage("ko")}>KR</LanguageBtn>
         </LanguageWrapper>
-      </DropDown>
+      </DropDown>*/}
     </Root>
   );
 };
