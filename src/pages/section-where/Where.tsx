@@ -10,7 +10,7 @@ const Root = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 370px;
   margin-top: 150px;
   background: linear-gradient(
     95.45deg,
@@ -26,7 +26,7 @@ const Where: React.FC = () => {
 
   return (
     <Root id="where-scroll-view">
-      <Text size={isMobile ? "30px" : "45px"} weight="900" marginTop="50px">
+      <Text size={isMobile ? "30px" : "45px"} weight="900" marginTop="75px">
         {t("where.title")}
       </Text>
       <Text
@@ -41,7 +41,7 @@ const Where: React.FC = () => {
             <div key={lineIndex}>{line}</div>
           ))}
       </Text>
-      <Button marginTop="50px">{t("where.button")}</Button>
+      {/*  <Button marginTop="50px">{t("where.button")}</Button>*/}
     </Root>
   );
 };

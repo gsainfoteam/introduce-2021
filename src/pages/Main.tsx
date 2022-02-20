@@ -8,6 +8,7 @@ import What from "./section-what/What";
 import How from "./section-how/How";
 import Join from "./section-join/Join";
 import Footer from "./section-footer/Footer";
+import PaymentForm from "./PaymentForm";
 
 const Main: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Main: React.FC = () => {
       <What />
       <How />
       <Join />
+      <PaymentForm />
       <Footer />
     </AppContainer>
   );
