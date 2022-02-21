@@ -1,10 +1,10 @@
 export const ko = {
   header: {
     title: "GSA Infoteam",
-    where: "소속",
-    what: "담당 업무",
-    how: "협업 방식",
-    join: "지원 방법",
+    where: "소개",
+    what: "주요 업무",
+    how: "일하는 방식",
+    join: "자주 묻는 질문",
   },
   about: {
     title: "인포팀에 함께하세요",
