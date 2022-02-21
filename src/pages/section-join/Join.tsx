@@ -31,6 +31,14 @@ const Join: React.FC = () => {
       title: t("join.content.2.title"),
       contents: t("join.content.2.description"),
     },
+    {
+      title: t("join.content.3.title"),
+      contents: t("join.content.3.description"),
+    },
+    {
+      title: t("join.content.4.title"),
+      contents: t("join.content.4.description"),
+    },
   ];
 
   return (
